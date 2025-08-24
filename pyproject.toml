@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "mkdocs-md-preview"
 version = "1.0.0"
 description = "MkDocs plugin for side-by-side markdown preview"
@@ -30,7 +30,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/mkdocs-md-preview"
+Homepage = "https://github.com/Paulkm2006/mkdocs-md-preview"
 
 [project.entry-points."mkdocs.plugins"]
 md-preview = "mkdocs_md_preview:MarkdownPreviewPlugin"

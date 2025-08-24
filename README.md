@@ -15,9 +15,9 @@ A MkDocs plugin that renders markdown code blocks with md preview syntax into si
 
 Install the plugin using pip:
 
-`ash
+```bash
 pip install mkdocs-md-preview
-`
+```
 
 ## Usage
 
@@ -25,28 +25,28 @@ pip install mkdocs-md-preview
 
 Add the plugin to your mkdocs.yml file:
 
-`yaml
+```yaml
 plugins:
   - md-preview
-`
+```
 
 ### 2. Configure (optional)
 
 You can customize the plugin with these options:
 
-`yaml
+```yaml
 plugins:
   - md-preview:
       enable: true
       left_title: "Markdown Source"
       right_title: "Rendered Output"
-`
+```
 
 ### 3. Add CSS (recommended)
 
 Add the CSS styles to your extra.css file:
 
-`css
+```css
 /* Markdown Preview Plugin Styles */
 .markdown-preview-container {
     margin: 1.5em 0;
@@ -179,14 +179,14 @@ Add the CSS styles to your extra.css file:
         white-space: normal;
     }
 }
-`
+```
 
 ### 4. Use in your markdown files
 
 Use the md preview syntax in your markdown files:
 
-``markdown
-`md preview
+```markdown
+```md preview
 # Example Heading
 
 This is **bold text** and this is *italic text*.
@@ -195,12 +195,11 @@ This is **bold text** and this is *italic text*.
 - List item 2
 - List item 3
 
-`python
+```python
 def hello_world():
     print("Hello, World!")
-`
-`
-``
+
+\```
 
 This will render as a side-by-side view showing both the markdown source and the rendered HTML output.
 
@@ -210,62 +209,6 @@ This will render as a side-by-side view showing both the markdown source and the
 |--------|------|---------|-------------|
 | enable | bool | 	rue | Enable or disable the plugin |
 | left_title | string | "Markdown Source" | Title for the source code panel |
-| ight_title | string | "Rendered Output" | Title for the rendered output panel |
-
-## Examples
-
-### Basic Example
-
-``markdown
-`md preview
-## Hello World
-
-This is a simple **markdown** example with *formatting*.
-`
-``
-
-### Advanced Example with Code
-
-``markdown
-`md preview
-### Code Example
-
-Here's some Python code:
-
-`python
-def greet(name):
-    return f"Hello, {name}!"
-
-print(greet("World"))
-`
-
-### Table Example
-
-| Column 1 | Column 2 |
-|----------|----------|
-| Data 1   | Data 2   |
-`
-``
-
-## Requirements
-
-- Python 3.7+
-- MkDocs 1.0+
-- Markdown 3.0+
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Changelog
-
-### 1.0.0
-- Initial release
-- Side-by-side markdown preview functionality
-- Responsive design
-- Horizontal scrolling support
-- Nested code block handling
+| 
+ight_title | string | "Rendered Output" | Title for the rendered output panel |
+```
